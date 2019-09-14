@@ -14,11 +14,11 @@ namespace random
             const double SNELHEID = 0.8;
 
             //Input 
-            Console.WriteLine("Wat is de lengte van het gazon? (m)");
+            Console.WriteLine("Wat is de lengte van het gazon?");
             _lengteGazon = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Wat is de breedte van het gazon? (m)");
+            Console.WriteLine("Wat is de breedte van het gazon?");
             _breedteGazon = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Wat is de breedte van de grasmaaier? (cm)");
+            Console.WriteLine("Wat is de breedte van de grasmaaier?");
             _breedteGrasmaaier = Convert.ToDouble(Console.ReadLine());
 
             //Omzetten naar meter
@@ -39,7 +39,7 @@ namespace random
                 _TijdMinuut -= _TijdUur * 60;
             }
             //Output
-            Console.WriteLine("U zal ongeveer " + _TijdUur.ToString("0 uur") + " en " + _TijdMinuut.ToString("0 minuten") + " over doen.");
+            Console.WriteLine("Het zal " + _TijdUur.ToString("0 uur") + " en " + _TijdMinuut.ToString("0 minuten") + " duren.");
             Console.ReadLine() ;
 
 
